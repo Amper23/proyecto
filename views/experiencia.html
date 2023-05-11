@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="body-experiencia">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="nav-link" href="index.html">
+            <span class="nav-text">Presentación</span>
+            <i class="fas fa-user-circle nav-icon"></i>
+        </a>
+        <a class="nav-link" href="hoja-de-vida.html">
+            <span class="nav-text">Hoja de Vida</span>
+            <i class="fa fa-file nav-icon"></i>
+        </a>
+        <a class="nav-link" href="experiencia.html">
+            <span class="nav-text">Experiencia universitaria</span>
+            <i class="fa fa-university nav-icon"></i>
+        </a>
+        <a class="nav-link" href="intereses.html">
+            <span class="nav-text">Sobre mi</span>
+            <i class="fas fa-heart nav-icon"></i>
+        </a>
+        <a class="nav-link" id="nav-link-largo" href="paginas_de_mi_interes.html">
+            <span class="nav-text">Páginas de mi Interés</span>
+            <i class="fas fa-star nav-icon"></i>
+        </a>
+    </nav>
+    
+    <div class="main-container">
+        <div class="image-container">
+            <div class="box" data-title="Universidad" onclick="changeText('Una de las cosas que más me gustó de la Universidad del Valle fue el campus y la diversidad de regiones que se encuentran allí. Además, los profesores están muy bien preparados y se nota su compromiso con la formación de los estudiantes.')">
+                <img class="imagen-experiencia " src="../img/plazoleta.jpg" alt="Imagen 1">
+            </div>
+            <div class="box" data-title="Motivacion" onclick="changeText('la topografía es una carrera que me parece fascinante, ya que combina la precisión matemática con el trabajo en campo y la aplicación de tecnologías avanzadas. Me atrae el desafío de trabajar en proyectos que requieren de una alta precisión y un trabajo en equipo coordinado.')">
+                <img class="imagen-experiencia " src="../img/motivacion.jpg" alt="Imagen 2">
+            </div>
+            <div class="box" data-title="Expectativas" onclick="changeText('En cuanto a mis expectativas y visión a 5-10 años, espero poder aplicar mis conocimientos y habilidades en proyectos importantes en el ámbito de la topografía y la ingeniería en general. Me gustaría trabajar en una empresa reconocida en el sector y continuar formándome para seguir creciendo profesionalmente. Además, tengo la esperanza de poder contribuir al desarrollo de mi país y mi región con mi trabajo y conocimientos.')">
+                <img class="imagen-experiencia " src="../img/espectativas.png" alt="Imagen 3">
+            </div>
+            <div class="box" data-title="Topografia" onclick="changeText('La carrera de topografía me llamó la atención por tener un componente transversal en diferentes disciplinas, como geodesia, catastro, geografía, y las materias de SIG, topografía, redes planimétricas y altimétricas. Creo que esta formación tan completa me dará las herramientas necesarias para ser un profesional competente en el mundo laboral.')">
+                <img class="imagen-experiencia " src="../img/topografiainstrumento.jpg" alt="Imagen 4">
+            </div>
+        </div>
+    
+        <div class="text-container">
+            <p id="text">Haz clic en una imagen para ver el texto</p>
+        </div>
+    </div>
+
+
+    <script>
+        function changeText(text) {
+                var textContainer = document.getElementById("text");
+                textContainer.innerHTML = text;
+            }
+
+    </script>
+
+
+
+</body>
+</html>
